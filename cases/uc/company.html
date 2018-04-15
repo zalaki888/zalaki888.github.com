@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>公司</title>
+<style type="text/css">
+*{ margin: 0; padding:0;}
+ul{ list-style:none;}
+body{
+font-family:Arial, "宋体","微软雅黑";}
+.inner{
+margin: 0 auto;
+width:950px;
+}
+.logo{
+float:left;
+padding-top:19px;
+}
+.language_vision{
+	float:right;
+	}
+.language{
+float:right;
+padding-top:41px;
+}
+.vision{
+	float:right;
+	padding-top:41px;
+	}
+.language li{
+float:left;
+height:16px;
+line-height:16px;
+background-image:url(images/business_header_language_icon_xfk_12.jpg);
+background-repeat:no-repeat;
+background-position:left center;
+padding-left:13px;
+padding-right:21px;
+font-size:11px;
+}
+.language .chinese{
+	padding-right:14px;
+	}/*这里直接定位居然定位不到。*/
+.vision li{
+	float:left;
+	font-size:11px;
+	height:16px;
+	line-height:16px;
+	}
+.vision .xhx{
+	padding-right:21px;
+	}
+.vision .phone{
+	padding-right:16px;
+	}
+.vision .pad{
+	padding-right:0px;
+	}
+.vision .img{
+	padding-right:6px;
+	}
+.header_top{
+height:74px;
+}
+.header_medle{
+height:44px;
+background-image:url(images/business_background_top_05.jpg);
+}
+.header_medle_nav_text ul{
+	padding-top:1px;
+	margin-left:32px;
+}
+.header_medle_nav li{
+	float:left;
+	padding-right:65px;
+	height:37px;
+	line-height:37px;
+	font-weight:bold;
+}
+.header_medle_nav .company{
+	color:#ff6501;
+	background:url(images/business_header_nav_open_icon_28.jpg) no-repeat 13px bottom;
+	}/*这里涉及到了权重问题。*/
+.header_medle_login_icon{
+	padding-top:6px;
+	float:right;
+	}
+.header_medle_nav .header_medle_login_icon li{
+	padding-right:6px;
+	float:left;
+}
+.header_medle_nav .header_medle_login_icon .header_medle_login_icon_last{
+	padding-right:0;
+	}
+.header_bottom_nav ul{
+float:right;
+}
+.header_bottom_nav li{
+	font-family:"微软雅黑";
+	font-size:12px;
+	line-height:46px;
+	height:46px;
+	float:left;
+	padding-right:16px;
+	font-weight:bold;
+	color:#646464;
+}
+.header_bottom_nav .survey{
+color:#ff6501;
+}
+.header_bottom_nav .mascot{
+padding-right:0;
+color:#666666;
+}
+.main{
+height:875px;
+}
+.main_left{
+float:left;
+}
+.main_left h2{
+height:50px;
+line-height:50px;
+padding-top:16px;
+}
+.main_left p{
+font-family:"宋体";
+line-height:24px;
+font-size:12px;
+width:700px;
+color:#6a635b;
+}
+.main_left .second{
+padding-top:22px;
+}
+.main_left .main_content{
+padding:37px 0 54px 84px;
+}
+.main_left .third{
+padding-bottom:97px;
+}
+.main_right{
+background:url(images/company_main_right_bg_07.jpg) no-repeat;
+height:476px;
+width:231px;
+float:right;
+margin-top:36px;
+}
+.main_right ul{
+padding:9px 0 0 24px;
+}
+.main_right li{
+height:30px;
+line-height:30px;
+width:188px;
+border-bottom:1px dotted #b2b2b2;
+color:#676767;
+background:url(images/business_header_language_icon_xfk_12.jpg) no-repeat left center;
+padding-left:8px;
+font-size:12px;
+}
+.main_right .technologyUC{
+color:#ff6201;
+}
+.footer{
+background-color:#d9d9d9;
+}
+.footer_content{
+	line-height:22px;
+	font-size:13px;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:21px;
+	background-image:url(images/footer_icon_34.jpg);
+	background-repeat:no-repeat;
+	background-position:right top;
+	color:#676767;
+}
+.header_medle_nav_text ul li a{
+	text-decoration: none;
+	color: black;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<div class="header_top inner">
+		<div class="logo"><img src="images/business_logo_04.jpg"/></div>
+        <div class="language_vision">
+            <div class="vision"><!--这里让这个写在前面是因为浏览器在读取元素的时候是顺序读取的，所以vision盒子会先进行浮动，从而达到我们要的效果。-->
+                <ul>
+                     <li  class="xhx">
+                        <div><img src="images/business_header_language_icon_xsx_13.jpg"></div>
+                    </li>
+                    <li class="img">
+                        <div><img src="images/business_header_language_icon_08.jpg"></div>	 
+                    </li>
+                    <li  class="phone">	
+                        <p>手机版</p>
+                    </li>
+                    <li>
+                    	<div class="img"><img src="images/business_header_language_icon_10.jpg"></div>
+                    </li>
+                     <li class="pad">	
+                        <p>Pad版</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="language">
+                <ul>
+                    <li>English</li>
+                    <li>Русский</li>
+                    <li>Tiếng Việt</li>
+                    <li>Bahasa Indonesia</li>
+                    <li>Português</li>
+                    <li>Español</li>
+                    <li>العربية</li>
+                    <li class="chinese">中文</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div class="header_medle">
+		<div class="header_medle_nav inner">
+       		<div class="header_medle_nav_text">
+                <ul>
+                    <li class="index"><a href="index.html">首页</a></li>
+					<li class="download"><a href="download.html">下载</a></li>
+					<li class="company"><a href="company.html">公司</a></li>
+					<li><a href="business.html">合作</a></li>
+                    <li>招聘</li>
+                    <li>帮助中心</li>
+                    <li>社区</li>
+                </ul>
+            </div>
+		  <div class="header_medle_login_icon">
+          	<ul>
+            	<li><div><img src="images/business_header_login_icon_27.jpg"></div></li>
+                <li><div><img src="images/business_header_login_icon_29.jpg"></div></li>
+                <li>
+                  <div><img src="images/business_header_login_icon_31.jpg"></div></li>
+                <li>
+                  <div><img src="images/business_header_login_icon_33.jpg"></div></li>
+                <li  class="header_medle_login_icon_last">
+                  <div><img src="images/business_header_login_icon_35.jpg"></div></li>
+            </ul>
+          </div>
+		</div>
+	</div>
+	<div class="header_bottom_nav inner">
+    	<ul>
+            <li>公司首页</li>
+            <li class="survey">公司概况</li>
+            <li>公司动态</li>
+            <li>管理团队</li>
+            <li>企业文化</li>
+            <li>粉丝专区</li>
+			<li>荣誉之旅</li>
+			<li>投资者</li>
+			<li>移动互联网报告</li>
+            <li class="mascot">吉祥物专区
+</li>
+        </ul>
+    </div>
+</div>
+<div class="banner inner"><img src="images/banner_img_03.jpg"/></div>
+<div class="main inner">
+	<div class="main_left">
+		<h2>技术UC：</h2>
+		<div class="le"></div>
+		<p class="first">公司核心产品是UC浏览器，它是全球领先的一款智能手机浏览器，能运行在Symbian、Android、ios、Windows Mobile、Win CE、Java、MTK、Brew等主流手机操作系统的200多个著名手机品牌、超过3000款手机终端上。2011年，UC优视推出了新一代UC浏览器UC8系列产品，承载了独创的U3内核和云端技术，完美地支持HTML5应用，具有智能、极速、安全、易扩展等特性，让您在阅资讯、读小说、看视频、上微博、玩游戏、网上购物等功能上都能享受最流畅的移动互联网体验。
+	</p>
+		<p  class="second">从2004年起，UC优视就已经开始用手机终端和网络服务器混合运算(云计算架构)的方式来做手机浏览器 ，这在全球的移动互联网领域都处于领先位置。2011年6月，经过三年的研发和多年的技术积累，UC优视发布了自主研发的全新手机浏览器内核——U3。U3内核是首个中国创造的浏览器内核，其定位于3G无线互联网时代的极速手机浏览体验，不仅能完美呈现桌面全页面浏览效果，同时兼顾高速、安全、智能及更强扩展性能，在完美还原桌面全页面浏览效果的情况下，能将页面流量压缩超过60%，将引领新一代手机浏览革命。</p>
+		<div class="main_content"><img src="images/company_main_img_10.jpg"></div>
+		<p  class="third">UC优视长期专注于手机浏览器领域，对用户需求的技术实现以及影响到用户体验的各类技术细节上，都有了非常丰富的技术积累。在浏览器产品的网址输入、页面处理、上传下载、数据处理、辅助功能等诸多方面，UC浏览器都明显领先于国内外的同类产品。</p>
+	</div>
+	<div class="main_right">
+		<ul>
+			<li>公司概况</li>
+			<li class="technologyUC">技术UC</li>
+			<li>社会责任</li>
+			<li>合作伙伴</li>
+			<li>企业愿景</li>
+			<li>融资情况</li>
+			<li>UC人才观</li>
+			<li>晋升机制</li>
+			<li>办公环境</li>
+			<li>薪酬与福利</li>
+			<li>联系我们</li>
+			<li>免责声明</li>
+			<li>隐私保护声明</li>
+		</ul>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer_content inner">UC优视 2004-2014 © 版权所有 增值电信业务经营许可证: 粤B2-20070379 粤ICP备09210879号<br />
+中华人民共和国互联网药品信息服务资格证：（粤）-非经营性-2011-0120
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商业</title>
+<style type="text/css">
+*{ margin: 0; padding:0;}
+ul{ list-style:none;}
+body{
+font-family:Arial, "宋体","微软雅黑";}
+.inner{
+margin: 0 auto;
+width:950px;
+}
+.logo{
+float:left;
+padding-top:19px;
+}
+.language_vision{
+	float:right;
+	}
+.language{
+float:right;
+padding-top:41px;
+}
+.vision{
+	float:right;
+	padding-top:41px;
+	}
+.language li{
+float:left;
+height:16px;
+line-height:16px;
+background-image:url(images/business_header_language_icon_xfk_12.jpg);
+background-repeat:no-repeat;
+background-position:left center;
+padding-left:13px;
+padding-right:21px;
+font-size:11px;
+}
+.language .chinese{
+	padding-right:14px;
+	}/*这里直接定位居然定位不到。*/
+.vision li{
+	float:left;
+	font-size:11px;
+	height:16px;
+	line-height:16px;
+	}
+.vision .xhx{
+	padding-right:21px;
+	}
+.vision .phone{
+	padding-right:16px;
+	}
+.vision .pad{
+	padding-right:0px;
+	}
+.vision .img{
+	padding-right:6px;
+	}
+.header_top{
+height:74px;
+}
+.header_medle{
+height:44px;
+background-image:url(images/business_background_top_05.jpg);
+}
+.header_medle_nav_text ul{
+	padding-top:1px;
+	margin-left:32px;
+}
+.header_medle_nav li{
+	float:left;
+	padding-right:65px;
+	height:37px;
+	line-height:37px;
+	font-weight:bold;
+}
+.header_medle_nav .open{
+	color:#ff6501;
+	background:url(images/business_header_nav_open_icon_28.jpg) no-repeat 30px bottom;
+	}/*这里涉及到了权重问题。*/
+.header_medle_login_icon{
+	padding-top:6px;
+	float:right;
+	}
+.header_medle_nav .header_medle_login_icon li{
+	padding-right:6px;
+	float:left;
+}
+.header_medle_nav .header_medle_login_icon .header_medle_login_icon_last{
+	padding-right:0;
+	}
+.header_bottom_nav ul{
+float:right;
+}
+.header_bottom_nav li{
+font-family:"微软雅黑";
+	font-size:12px;
+	line-height:46px;
+	height:46px;
+	float:left;
+	padding-right:16px;
+	font-weight:bold;
+	color:#646464;
+}
+.header_bottom_nav .index{
+color:#ff6501;
+}
+.header_bottom_nav .strategicInvestment{
+padding-right:0;
+color:#666666;
+}
+.main{
+padding-top:15px;
+}
+.main_content{
+height:270px;
+}
+.content{
+float:left;
+width:288px;
+}
+.content h2{
+	font-family:"宋体";
+	font-size:17px;
+	line-height:68px;
+	height:68px;
+	color:#676767;
+}
+.content p{
+	font-family:"宋体";
+	font-size:13px;
+	line-height:22px;
+	padding-top:9px;
+	color:#666666;
+}
+.content_center{
+	margin:0 43px;
+	}
+.footer{
+background-color:#d9d9d9;
+}
+.footer_content{
+	line-height:22px;
+	font-size:13px;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:21px;
+	background-image:url(images/footer_icon_34.jpg);
+	background-repeat:no-repeat;
+	background-position:right top;
+	color:#676767;
+}
+.header_medle_nav_text ul li a{
+	text-decoration: none;
+	color: black;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<div class="header_top inner">
+		<div class="logo"><img src="images/business_logo_04.jpg"/></div>
+        <div class="language_vision">
+            <div class="vision"><!--这里让这个写在前面是因为浏览器在读取元素的时候是顺序读取的，所以vision盒子会先进行浮动，从而达到我们要的效果。-->
+                <ul>
+                     <li  class="xhx">
+                        <div><img src="images/business_header_language_icon_xsx_13.jpg"></div>
+                    </li>
+                    <li class="img">
+                        <div><img src="images/business_header_language_icon_08.jpg"></div>	 
+                    </li>
+                    <li  class="phone">	
+                        <p>手机版</p>
+                    </li>
+                    <li>
+                    	<div class="img"><img src="images/business_header_language_icon_10.jpg"></div>
+                    </li>
+                     <li class="pad">	
+                        <p>Pad版</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="language">
+                <ul>
+                    <li>English</li>
+                    <li>Русский</li>
+                    <li>Tiếng Việt</li>
+                    <li>Bahasa Indonesia</li>
+                    <li>Português</li>
+                    <li>Español</li>
+                    <li>العربية</li>
+                    <li class="chinese">中文</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div class="header_medle">
+		<div class="header_medle_nav inner">
+       		<div class="header_medle_nav_text">
+                <ul>
+                   <li class="index"><a href="index.html">首页</a></li>
+					<li class="download"><a href="download.html">下载</a></li>
+					<li><a href="company.html">公司</a></li>
+					<li class="open"><a href="business.html">合作</a></li>
+                    <li>招聘</li>
+                    <li>帮助中心</li>
+                    <li>社区</li>
+                </ul>
+            </div>
+		  <div class="header_medle_login_icon">
+          	<ul>
+            	<li><div><img src="images/business_header_login_icon_27.jpg"></div></li>
+                <li><div><img src="images/business_header_login_icon_29.jpg"></div></li>
+                <li>
+                  <div><img src="images/business_header_login_icon_31.jpg"></div></li>
+                <li>
+                  <div><img src="images/business_header_login_icon_33.jpg"></div></li>
+                <li  class="header_medle_login_icon_last">
+                  <div><img src="images/business_header_login_icon_35.jpg"></div></li>
+            </ul>
+          </div>
+		</div>
+	</div>
+	<div class="header_bottom_nav inner">
+    	<ul>
+            <li class="index">开放合作首页</li>
+            <li>游戏开放平台</li>
+            <li>运营商合作</li>
+            <li>终端厂商合作</li>
+            <li>互联网合作</li>
+            <li>开发者中心</li>
+            <li class="strategicInvestment">战略投资</li>
+        </ul>
+    </div>
+</div>
+<div class="banner inner"><img src="images/business_banner_21_21.jpg" /></div>
+<div class="main inner">
+	<div class="main_content">
+		<div class="content">
+			<h2>游戏开放平台</h2>
+			<div class="icon"><img src="images/business_game.jpg" /></div>
+			<p>移动互联网移动娱乐平台之一，UC九游通过对各类移动终端的覆盖，为用户创造一种全新的游戏生活体验。</p>
+		</div>
+		<div class="content content_center">
+			<h2>运营商合作</h2>
+			<div class="icon"><img src="images/business_1.jpg" /></div>
+			<p>使用云压缩和云加速，为您节省成本，使您的网络更畅通。</p>
+		</div>
+		<div class="content">
+			<h2>终端厂商合作</h2>
+			<div class="icon"><img src="images/business_2.jpg" /></div>
+			<p>为您的用户捆绑最优秀的浏览器服务。</p>
+		</div>
+	</div>
+	<div class="main_content">
+		<div class="content">
+			<h2>互联网合作</h2>
+			<div class="icon"><img src="images/business_3.jpg" /></div>
+			<p>我们为您的内容和服务提供最优质的出口。</p>
+		</div>
+		<div class="content content_center">
+			<h2>开发者中心</h2>
+			<div class="icon"><img src="images/business_5.jpg" /></div>
+			<p> UC浏览器开放参数以及第三方调用UC浏览器例程。</p>
+		</div>
+		<div class="content">
+			<h2>战略投资</h2>
+			<div class="icon"><img src="images/business_6.jpg" /></div>
+			<p>为您提供战略规划、产品技术、市场策略、内部管理及商业模式等方面的大力支持。</p>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footer_content inner">UC优视 2004-2014 © 版权所有 增值电信业务经营许可证: 粤B2-20070379 粤ICP备09210879号<br />
+中华人民共和国互联网药品信息服务资格证：（粤）-非经营性-2011-0120
+	</div>
+</div>
+</body>
+</html>
