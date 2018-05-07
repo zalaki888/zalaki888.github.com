@@ -1,0 +1,116 @@
+.main .title_top{
+	height: 144px;
+	line-height: 144px;
+	font-family: arial;
+	font-size: 27px;
+	color: #353334;
+	text-align: center;
+	margin-top: 27px;
+}
+.main_top{
+	height: 295px;
+}
+.main_top .big{
+	height:128px;
+	width: 360px;
+	background: url(../images/ser-bg.png) no-repeat;
+	margin: 0 20px 20px 0;
+	float: left;
+}
+.main_top .big .big_left,.big_left2,.big_left3,.big_left4,.big_left5,.big_left6{/*共有性质的合一，节省代码。*/
+	height: 123px;
+	width: 67px;
+	background-color: #ed5844;
+	float: left;
+	background: url(../images/s-icons.png) no-repeat 20px 43px #ed5844;
+}
+.main_top .big .big_left2{
+	background: url(../images/s-icons.png) no-repeat -67px 43px #ed5844;
+}
+.main_top .big .big_left3{
+	background: url(../images/s-icons.png) no-repeat -143px 43px #ed5844;
+}
+.main_top .big .big_left4{
+	background: url(../images/s-icons.png) no-repeat 22px -69px #ed5844;
+}
+.main_top .big .big_left5{
+	background: url(../images/s-icons.png) no-repeat -63px -69px #ed5844;
+}
+.main_top .big .big_left6{
+	background: url(../images/s-icons.png) no-repeat -142px -69px #ed5844;
+}
+.main .big .big_right{
+	float: left;
+	width: 293px;/*如果没有这个宽的设定，p标签中的内容就会放不下，掉到下面。*/
+}
+.main .big .big_right h3{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #535152;
+	padding: 24px 0 0 23px;
+}
+.main .big .big_right p{
+	font-family: "微软雅黑";
+	font-size: 13px;
+	color: #9c9c9c;
+	line-height: 20px;
+	margin: 13px 0 0 23px;
+}
+.main .title_bottom{
+	height: 86px;
+	line-height: 86px;
+	font-family: arial;
+	font-size: 27px;
+	color: #353334;
+	text-align: center;
+	margin-top: 22px;/*测量高度为42px但是因为实际上有padding-bottom20px。*/
+}
+.main_bottom{
+	height: 493px;
+}
+.main_bottom .big{
+	float: left;
+	width: 380px;
+	height: 235px;
+}
+.main_bottom h3{
+	line-height: 39px;
+	height: 39;
+	font-family: arial;
+	font-size: 18px;
+	text-align: center;
+}
+.main_bottom p{
+	line-height: 23px;
+	font-family: arial;
+	font-size: 12px;
+	text-align: center;
+	padding: 0 17px ;
+}
+.main_bottom .big .pic , .pic2 ,.pic3,.pic4,.pic5{
+	width: 78px; 
+	height: 79px;
+	margin: 0 auto;
+	padding: 11px 0 14px 0;
+	background: url(../images/img-sprite.png) no-repeat -11px center;
+}
+.main_bottom .big .pic2{
+	background: url(../images/img-sprite.png) no-repeat -112px center;
+}
+.main_bottom .big .pic3{
+	background: url(../images/img-sprite.png) no-repeat -213px center;
+}
+.main_bottom .big .pic4{
+	background: url(../images/img-sprite.png) no-repeat -314px center;
+}
+.main_bottom .big .pic5{
+	background: url(../images/img-sprite.png) no-repeat -415px center;
+}
+.main_bottom .big img{
+	height: 351px;
+	height: 207px;
+}
+.main_bottom .big .icon{
+	padding: 0 15px;
+	text-align: center;
+}

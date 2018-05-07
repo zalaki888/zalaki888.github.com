@@ -1,0 +1,247 @@
+*{ margin:0; padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration: none;}
+img,input{border: none;}
+/*居中样式*/
+.inner{
+	width: 1140px;
+	margin: 0 auto;
+}
+.header{
+	height: 83px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);/*加一个阴影*/
+	position: relative;/*这里运用定位并不是要进行元素的覆盖，而是单纯的为了提高某一个元素的层级关系，所以应该使用的是相对定位。*/
+	z-index: 2;
+}
+.header .logo{
+	float: left;
+	padding-top: 16px;
+}
+.header .nav{
+	float: left;
+	margin-left: 152px;
+}
+.header li{
+	float: left;
+	height: 80px;
+}
+.header .nav a{/*这里尤其要注意优先级的问题，一定要在每一块逐级添加。*/
+	display: block;
+	padding: 0 24px;
+	color: #4a4a3e;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 80px;
+	border-top: 3px solid #ffffff;/*为了解决首页顶上的边框的问题。*/
+}
+.header .nav .active{/*这里的active意义深刻，能够实现代码的复用。*/
+	background: url(../images/index_nav_icon_03.jpg) repeat-x;
+	border-top-color: #eb5846;/*冲掉之前的白色*/
+	/*padding-top: 0;/*冲掉之前的样式，由于每个页面的这个样式作用元素不一样，所以这个样式不能放在共用样式表中，需要丹棱拿出来放到index样式表里面。治标不治本*/
+	color: #e2600a;
+}
+.header .nav a:hover{
+	background: url(../images/index_nav_icon_03.jpg) repeat-x;
+	border-top-color: #eb5846;
+	color: #e2600a;
+}
+.header .login{
+	float: right;
+	height: 54px;
+	padding-top: 29px;/*这里需要将顶出去的行高减去。*/
+}
+.header .login a{
+	height: 22px;
+	width: 23px;
+	float: left;
+	margin-left: 7px;
+	background: url(../images/s-icons.png) no-repeat -242px -7px;/*这里应用了精灵图定位的方法，使得浏览器只加载一张图，就能通过位移将所有的小图加载完成。虽然多写了几行代码，但是这确实大大的优化了代码，见笑了服务器的压力。*/
+}
+.header .login a:hover{
+	background:url(../images/s-icons.png) no-repeat -242px -46px;
+}
+.header .login .second{
+	background:url(../images/s-icons.png) no-repeat -268px -7px;
+}
+.header .login .second:hover{
+	background:url(../images/s-icons.png) no-repeat -268px -46px;
+}
+.header .login .third{
+	background:url(../images/s-icons.png) no-repeat -293px -7px;
+}
+.header .login .third:hover{
+	background:url(../images/s-icons.png) no-repeat -293px -46px;
+}
+.header .login .fourth{
+	background:url(../images/s-icons.png) no-repeat -318px -7px;
+}
+.header .login .fourth:hover{
+	background:url(../images/s-icons.png) no-repeat -318px -46px;
+}
+.header .login .fivth{
+	background:url(../images/s-icons.png) no-repeat -343px -7px;
+}
+.header .login .fivth:hover{
+	background:url(../images/s-icons.png) no-repeat -343px -46px;
+}
+.header .login .sixth{
+	background:url(../images/s-icons.png) no-repeat -368px -7px;
+}
+.header .login .sixth:hover{
+	background:url(../images/s-icons.png) no-repeat -368px -46px;
+}
+.footer{
+	height: 273px;
+	background-color: #373737;
+}
+.footer .about{
+	float: left;
+	width: 284px;
+}
+.footer .about h3{
+	height: 51px;
+	line-height: 51px;
+	font-family: "微软雅黑";
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: url(../images/index_footer_icon_07.jpg) no-repeat 15px bottom;
+	padding-top: 12px;
+	padding-left: 15px;
+}
+.footer .about p{
+	line-height: 23px;
+	font-family: "微软雅黑";
+	font-size: 13px;
+	color: #949398;
+	padding-top: 12px;
+	padding-left: 15px;
+	width: 251px;
+	margin-top: 20px;
+}
+.footer .tag h3{
+	height: 51px;
+	line-height: 51px;
+	font-family: "微软雅黑";
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: url(../images/index_footer_icon_07.jpg) no-repeat 15px bottom;
+	padding-top: 12px;
+	padding-left: 15px;
+	float: left;
+	width: 285px;
+	margin-bottom: 25px;
+}
+.footer .tag{
+		width: 284px;
+		float: left;
+}
+.footer .tag .tag_a{
+	padding-left: 15px;
+}
+.footer .tag a{
+	display: block;
+	height: 37px;
+	line-height: 37px;
+	padding: 0 10px;
+	background-color: #222222;
+	float: left;
+	margin: 0 3px 4px 0;
+	color: #949398;
+	font-family: "微软雅黑";
+	font-size: 13px;
+}
+.footer .tweets{
+	float: left;
+}
+.footer .tweets h3{
+	height: 51px;
+	line-height: 51px;
+	font-family: "微软雅黑";
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: url(../images/index_footer_icon_07.jpg) no-repeat 15px bottom;
+	padding-top: 12px;
+	padding-left: 15px;
+	margin-bottom: 18px;
+}
+.footer .tweets p{
+	line-height: 21px;
+	font-family: arial;
+	font-size: 13px;
+	color: #949398;
+	padding-left: 31px;
+	width: 220px;
+	margin-left: 15px;
+	background: url(../images/tw.png) no-repeat left center;
+}
+.footer .tweets p span{
+	color: #FFFFFF;
+}
+.footer .tweets h4{
+	line-height: 33px;
+	height: 33px;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 46px;
+	color: #FFFFFF;
+}
+.footer .tweets p a{
+	color: #ffffff;
+}
+.footer .feed{
+	width: 255px;
+	float: left;
+}
+.footer .feed h3{
+	height: 51px;
+	line-height: 51px;
+	font-family: "微软雅黑";
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: url(../images/index_footer_icon_07.jpg) no-repeat 15px bottom;
+	padding-top: 12px;
+	padding-left: 15px;
+	margin-bottom: 18px;
+}
+.footer .feed .pics{
+	padding-left: 15px;
+}
+.footer .feed .pics div{
+	float: left;
+	margin: 0 3px 3px 0;
+}
+.bottom{
+	background-color: #232323;
+	height: 52px;
+	position: relative;
+}
+.bottom .back{
+	display: block;
+	background: url(../images/move-top.png) no-repeat center;
+	height: 25px;
+	width: 38px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+.bottom .logo_bot{
+	margin-top: 14px;
+	float: left;
+}
+.bottom p{
+	float: right;
+	height: 52px;
+	line-height: 52px;
+	color: #ffffff;
+	font-family: arial;
+	font-size: 13px;
+}
+.bottom p span{
+	color: #f2554c;
+}

@@ -31,6 +31,7 @@ html, body{
 	position:absolute;
 	top:0;
 	left:10%;
+	z-index: 1;
 }
 .navigation{
 	width:70%;
@@ -82,7 +83,8 @@ ul.navig li a:hover{
 	vertical-align: -webkit-baseline-middle;
 }
 .banner{
-	background:url(../images/banner.jpg)no-repeat;
+	position: relative;
+	z-index: 0;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-o-background-size:cover;
@@ -462,7 +464,7 @@ width: 25%!important;
 /*-- Gallery Part Ends Here --*/
 /*-- Video search Parts starts Here --*/
 .video-serch{
-	background:url(../images/vid-bg.jpg)no-repeat;
+	background:url(../images/media_bg.jpg) no-repeat;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -496,6 +498,7 @@ width: 25%!important;
 	background:#ff7105;
 	padding:10px 15px;
 	font-weight:500;
+	border-radius: 5px;
 }
 .more a:hover{
 	background:#4fbfa8;

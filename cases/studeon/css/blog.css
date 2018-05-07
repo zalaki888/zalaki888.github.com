@@ -1,0 +1,265 @@
+.main{
+	height: 1971px;
+}
+.main .left{
+	width: 840px;
+	float: left;
+}
+.main .left .title{
+	height: 26px;
+	line-height: 26px;
+	font-family: arial;
+	font-size: 18px;
+	color: #0e0e0e;
+	padding-top: 40px;
+	padding-left: 15px;
+}
+.main .left .p_top{
+	height: 43px;
+	line-height: 43px;
+	font-family: arial;
+	font-size: 12px;
+	color: #9d9d9d;
+	padding-left: 15px;
+}
+.main .left .p_top span{
+	color: #ef6451;
+}
+.main .left .pic{
+	width: 813px;
+	height: 417px;
+	border: 6px solid #ea5743;
+	margin-left: 14px;
+	position: relative;
+}
+.main .left .pic img{
+	width: 813px;
+	height: 417px;
+}
+.main .left .pic .right1{
+	position: absolute;
+	right: 44px;
+	bottom: 0px;
+	width: 41px;
+	height: 40px;
+	background: url(../images/s-icons.png) no-repeat -240px -168px;
+}
+.main .left .pic .right2{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 41px;
+	height: 40px;
+	background: url(../images/s-icons.png) no-repeat -291px -122px;
+}
+.main .left .title_bot{
+	height: 41px;
+	line-height: 41px;
+	font-family: arial;
+	font-size: 17px;
+	color: #f06b5a;
+	padding-top: 1px;
+	padding-left: 15px;
+	font-weight: normal;
+}
+.main .left .title_bot span{
+	color: #7b8084;
+}
+.main .left .p_bot{
+	width: 810px;
+	line-height: 23px;
+	font-family: arial;
+	font-size: 12px;
+	color: #9d9d9d;
+	padding:0 15px;
+}
+.main .left .form_title{
+	height: 53px;
+	line-height: 53px;
+	font-family: arial;
+	font-size: 26px;
+	color: #262827;
+	padding-top: 17px;
+	padding-left: 15px;
+}
+.main .left .comment h4{
+	height: 21px;
+	line-height: 21px;
+	font-family: arial;
+	font-size: 17px;
+	color: #000000;
+	font-weight: normal;
+	padding-left: 15px;
+}
+.main .left .comment .text{
+	height: 38px;
+	width: 774px;
+	background-color: #EEEEEE;
+	margin: 0 0 19px 15px;
+	padding: 0 17px;/*纯粹是为了增加用户体验性。*/
+}
+.main .left .comment textarea{
+	height: 150px;
+	background-color: #EEEEEE;
+	margin: 0 0 16px 15px;
+	width: 774px;
+	padding: 0 17px;
+	border-style: none;/*去除文本域的边框样式。*/
+}
+.main .left .comment .submit{
+	width: 145px;
+	height: 51px;
+	background-color: #ed5746;
+	color: #FFFFFF;
+	margin-left: 15px;
+	font-family: arial;
+	font-size: 16px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0,0,0,.5) inset;
+}
+.main .left .reply_title{
+	height: 61px;
+	line-height: 61px;
+	font-family: arial;
+	font-size: 26px;
+	color: #262827;
+	padding-top: 35px;
+	padding-left: 15px;
+	font-weight: normal;
+}
+.main .left .reply_big{
+	width: 809px;
+	height: 199px;
+	border: 1px solid #d4d4d4;
+	margin-left: 14px;
+	margin-bottom: 40px;
+}
+.main .left .reply_big .pic{
+	height: 158px;
+	width: 158px;
+	margin: 17px 48px 0 15px;
+	border: none;
+	float: left;
+}
+.main .left .reply_big .pic img{
+	height: 158px;
+	width: 158px;
+}
+.main .left .reply_big .replynation_title{
+	line-height: 18px;
+	height: 18px;
+	font-family: arial;
+	font-size: 14px;
+	color: #4e4e4c;
+	padding-top: 16px;
+}
+.main .left .reply_big .replynation{
+	line-height: 23px;
+	font-family: arial;
+	font-size: 12px;
+	color: #9e9e9e;
+	width: 800px;
+}
+.main .left .reply_big .date{
+	line-height: 23px;
+	font-family: arial;
+	font-size: 12px;
+	color: #c7c7c7;
+	float: left;
+	padding-top: 18px;
+}
+.main .left .reply_big .reply_button{
+	display: block;
+	height: 43px;
+	line-height: 43px;
+	width: 99px;
+	background-color: #ee5746;
+	box-shadow: 0 0 10px rgb(0,0,0,.5) inset;
+	margin-left: 628px;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 15px;
+	font-family: arial;
+	font-weight: bold;
+}
+.main .right{
+	width: 270px;
+	float: left;
+	padding-left: 30px;
+}
+.main .right .serach_title{
+	height: 68px;
+	line-height: 68px;
+	font-family: arial;
+	font-size: 15px;
+	color: #010002;
+	padding-top: 17px;
+}
+.main .right .serach{
+	height:42px ;
+	width: 253px;
+	border: 1px solid #dbdbdb;
+}
+.main .right .serach .text{
+	height:42px ;
+	width: 191px;
+	padding: 0 18px;
+	float: left;
+}
+.main .right .serach .submit{
+	height:42px ;
+	width: 26px;
+	background: url(../images/search.png) no-repeat left center;
+	cursor: pointer;/*鼠标变成手型。*/
+}
+.main .right .title_nav{
+	height: 54px;
+	line-height: 54px;
+	font-family: arial;
+	font-size: 15px;
+	color: #010002;
+	padding-top: 10px;
+}
+.main .right li{
+	height: 23px;
+	line-height: 23px;
+	background: url(../images/b_arrow.png) no-repeat left 8px;
+}
+.main .right li a{
+	display: block;
+	font-family: arial;
+	font-size: 12px;
+	color: #9b999a;
+	padding-left: 23px;
+}
+.main .right .title_nav_bot{
+	height: 52px;
+	line-height: 52px;
+	font-family: arial;
+	font-size: 15px;
+	color: #010002;
+}
+.main .right .title_pic{
+	height: 48px;
+	line-height: 48px;
+	font-family: arial;
+	font-size: 15px;
+	color: #010002;
+	margin-bottom: 6px;
+}
+.main .right .pic{
+	width: 266px;
+	padding-left: 4px;
+	padding-top: 6px;
+}
+.main .right .pic div{
+	width: 114px;
+	height: 73px;
+	margin: 0 12px 08px 0;
+	float: left;/*这就是为什么图片不单独使用的原因了，因为不能进行会计元素的一些相关操作，座椅要把图片变成会计元素，放在一个div中是最贱的方法。*/
+}
+.main .right .pic div img{
+	width: 114px;
+	height: 73px;
+}

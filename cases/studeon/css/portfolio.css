@@ -1,0 +1,58 @@
+.main{
+	text-align: center;
+}
+.main h2{
+	font-family: arial;
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	padding-top: 80px;
+}
+.main ul{
+	height: 65px;/*由于内部的li元素进行了浮动，所以ul本身没有高度了。想对他进行操作，就一定要加上一个高度才行。*/
+	display: inline-block;/*具有块级属性，同时能够用text-align操作居中对齐。（IE8才生效，对于低版本的需要使用hack技术）*/
+	/*一下两句只对IE浏览器生效：HACK技术。*/
+	*display: inline;
+	*zoom: 1;
+}
+.main li{
+	float: left;
+	height: 65px;
+	line-height: 65px;
+	padding: 0 17px;
+}
+.main li a{
+	font-family: arial;
+	font-size: 14px;
+	color: #222423;
+	display: block;
+}
+li a:hover{
+	color: #e9270b;
+}/*注意权重问题。*/
+.main .now{
+	color: #e9270b;
+}
+.main .pic{
+	height: 602px;
+}
+.box{
+	width: 285px;
+	height: 182px;
+	position: relative;
+	float: left;
+}
+.box img{
+	width: 285px;
+	height: 182px;
+}
+.box a{
+	position: absolute;/*定位之后会有类似于块级元素的属性：能设置宽度和高度。*/
+	left: 0;
+	top: 0;
+	width: 285px;
+	height: 182px;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+}
+.box:hover a{display: block;}/*语义解释：对box进行悬停判定，悬停后a标签变为实心。*/
