@@ -1,0 +1,160 @@
+	.b_top{
+		height:424px;
+		background-image: url(../images/b_top_14.jpg);
+		}
+	.b_bot{
+		height:89px;
+		background-image: url(../images/b_bot_18.jpg);
+		}
+	.b_top_inner{
+		width:960px;
+		margin: 0 auto;
+		}
+	.b_bot_inner_eage{
+	width:230px;
+	height:89px;
+	float:left;
+	}
+	.b_bot_inner_medle{
+	width:250px;
+	height:89px;
+	float:left;
+	}
+	.b_bot_inner_eage h3{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #656764;
+	height: 21px;
+	line-height: 21px;
+	margin-top: 27px;
+	margin-left: 15px;
+	font-weight: normal;
+	}
+	.b_bot_inner_eage p{
+		height: 18px;
+		line-height: 18px;
+		font-family: "微软雅黑";
+		font-size: 11px;
+		margin-left: 15px;
+		color: #9a9a9c;
+	}
+	.b_bot_inner_medle h3{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #656764;
+	height: 21px;
+	line-height: 21px;
+	margin-top: 27px;
+	font-weight: normal;
+	margin-left: 15px;
+	}
+	.b_bot_inner_medle p{
+		height: 18px;
+		line-height: 18px;
+		font-family: "微软雅黑";
+		font-size: 11px;
+		margin-left: 15px;
+		color: #9a9a9c;
+	}
+	.b_bot_inner{
+	width:960px;
+	margin: 0 auto;
+	}
+	.b_bot_inner_eage_img{
+	float:left;
+	}
+	.b_bot_inner_eage_text{
+	width:130px;
+	height: 89px;
+	float:left;
+	}
+	.b_bot_inner_eage_text .active{
+		color: #3d6299;
+	}
+	.b_bot_inner_medle_img{
+	float:left;
+	}
+	.b_bot_inner_medle_text{
+	width:130px;
+	float:left;
+	height: 89px;
+	}
+.body{
+	width:960px;
+	height:706px;
+	margin: 0 auto;
+	}
+	/*.content{
+	width:480px;
+	height:190px;
+	float:left;
+	}
+	.content_img{
+	float:left;
+	}
+	.content_text{
+	width:295px;
+	float:left;
+	}*/
+	.body_content{
+		height:185px;
+		}
+	.body_content_left{
+		width:440px;
+		float:left;
+		}
+	.body_content_right{
+		width:440px;
+		float:right;
+		}
+	.body_content_right h2{
+		font-family: "微软雅黑";
+		font-size: 28px;
+		color: #3a619c;
+		height: 60px;
+		line-height: 60px;
+		margin-top: 54px;
+		font-weight: normal;
+		
+	}
+	.body_content_right p{
+		font-family: "微软雅黑";
+		font-size: 14px;
+		color: #9A9A9C;
+		line-height: 20px;
+		margin-top: 14px;
+	}
+	.body_content_left_icon{
+		width:140px;
+		float:left;
+		margin-top: 63px;
+		}
+	.body_content_left_text{
+		width:300px;/*这里一定要设置宽度，不然还是会出现塌陷的问题。*/
+		float:left;
+		}
+	.body_content_left h2{
+		font-family: "微软雅黑";
+		font-size: 28px;
+		color: #3a619c;
+		height: 60px;
+		line-height: 60px;
+		margin-top: 54px;
+		font-weight: normal;
+	}
+	.body_content_left p{
+		font-family: "微软雅黑";
+		font-size: 14px;
+		color: #9A9A9C;
+		line-height: 20px;
+		margin-top: 14px;
+	}
+	.body_content_right_icon{
+		width:140px;
+		float:left;
+		margin-top: 63px;
+		}
+	.body_content_right_text{
+		width:300px;
+		float:right;
+		}

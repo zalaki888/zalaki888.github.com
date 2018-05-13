@@ -1,0 +1,67 @@
+*{margin:0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+img,input{border: none;}/*最常用的样式预设，这里要注意了，注释的格式。。。*/
+	.header{
+		height: 60px;
+		background-image: url(../images/360_02.jpg);
+		}
+	.inner{
+		width:960px;
+		margin: 0 auto;
+		position: relative;
+		}
+	.nav{
+		float:right;
+		margin-top: 16px;
+		}
+	.nav li{
+		width: 69px;
+		height: 31px;
+		line-height: 27px;
+		float: left;
+		margin-right: 15px;
+		text-align: center;
+	}
+	.nav li a{
+		font-family: "微软雅黑";
+		font-size: 13px;
+		color: #454545;
+		display: block;
+		padding-bottom: 4px;/*因为设置了行高，所以这里用padding来进行内部扩充就可以把剩下的小三角显示出来了。*/
+	}
+	.nav .active{
+		background: url(../images/index_header_nav_bgimg_07.jpg) no-repeat;
+		color: #FFFFFF;
+	}
+	.nav li a:hover{
+		background: url(../images/index_header_nav_bgimg_07.jpg) no-repeat;
+		color: #FFFFFF;
+	}
+	.logo{
+		float:left;
+		margin-left: 8px;
+		margin-top: 11px;
+		}
+	.nav .news{
+		height: 10px;
+		width: 23px;
+		background: url(../images/index_header_nav_icon_03.jpg) no-repeat;
+		position: absolute;
+		left: 666px;
+		top: 5px;
+	}
+	.footer{
+	background-color:#e7e7e7;
+	height: 70px;
+	}
+	.footer p{
+		line-height: 20px;
+		padding-top: 15px;
+		font-family: "微软雅黑";
+		font-size: 12px;
+		color: #beb9b5;
+		width: 370px;
+		text-align: center;
+		margin: 0 auto;;
+	}
