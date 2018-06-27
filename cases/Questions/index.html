@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>试题</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="images/logo_03.png"/>
+			</div>
+			<div class="title">
+				<h3>题库</h3>
+			</div>
+		</div>
+		<div class="main">
+			<h1>在线试题模拟系统</h1>
+			<h2>第一部分：选择题</h2>
+			<ul id="questionsList">
+				
+			</ul>
+			<div id="1">666</div>
+		</div>
+		<div class="footer"></div>
+		
+	</body>
+	<script type="text/javascript">
+		//最外面的一个变量用来记录数据
+		var array_answer=[];
+		function showJson() {
+			var test;
+			if(window.XMLHttpRequest) {
+				test = new XMLHttpRequest();
+			} else if(window.ActiveXObject) {
+				test = new window.ActiveXObject();
+			} else {
+				alert("请升级至最新版本的浏览器");
+			}
+			if(test != null) {
+				test.open("GET", "json/selection.json", true);
+				test.send(null);
+				test.onreadystatechange = function() {
+					if(test.readyState == 4 && test.status == 200) {
+						var obj = JSON.parse(test.responseText);//这里多了一个json的转换，利用这个再利用js生成dom元素的方法就能实现前后台的数据分离。具体的方法就是生成元素之后再将子元素添加到父元素当中。
+						var Qlist=document.getElementById("questionsList");
+						var num=0;
+						var question_num=1;
+						var arr_num=0;
+						//随机拿题的逻辑：把json文件全部拿过来，然后存储到一个数组当中（内存中），然后再从这个数组中随机拿题。
+						//逻辑2：提前准备好一个随机数组，然后再取数据的时候一一对照。（新能方便比第一个好很多。）注意：单独的出来一个随机数组还是不行的，还得排序一下，因为遍历json数据的时候只能是从小到大答遍历一遍，如果前一个数组比后一个数字大，json数据就不能喝随机数组匹配了。
+						var arr=[];
+						//这里要做的是判断答题的正确性。
+						var arr_answer=[];//定义一个存放答案的数组，用来将答案存起来，然后再选择的时候进行判断对错，这样是为了性能优化，不用每次点击都去遍历一遍json数据。
+						while(arr_num<10){
+							//1、创造一个随机数组；
+							var index=Math.floor(Math.random()*30+1);
+							if(arr.indexOf(index)==-1){//入如果数组中没有这个元素，然后进行添加，然而没有元素的表示就是返回值为-1
+								arr.push(index);
+								arr_num++;
+							}
+							//2.排序
+							arr.sort(function(x,y){
+								return x-y;
+							});//注意：sort排序默认的是按照字符串来进行排序的，所以会出现个位和十位顺序混乱，用这种方法就完美解决了，x-y是从小到大，y-x是从大到小。（很牛逼）
+							//console.log(arr);//我们拿到了一个不重复的随机数组。
+							//console.log(arr_num);
+							//console.log(index);
+						}
+						for(var question in obj) {
+							var oLi=document.createElement("li");
+							var oDiv=document.createElement("div");
+							//3、利用判断实现从json数据中拿到单个数据
+							if(obj[question].id==arr[num]){
+								oDiv.innerHTML="第"+question_num+"题"+" "+obj[question].question+"<br/>";
+								for(var selection in obj[question].selections){//下一阶段的任务就是要对这里的选项进行数据结构的变更以及数据的读取方式的变化（建议：数据结构变成数组，然后再读取的时候进行for in遍历即可。）
+									oDiv.innerHTML+=obj[question].selections[selection]+"<br/>";//这里要搞清楚键和值得关系。
+								}
+								arr_answer.push(obj[question].answer);
+								oDiv.setAttribute("id",num);
+								oDiv.setAttribute("class","question_div");
+								oDiv.innerHTML+="<ul class='answerSelectionsList'>"+
+													"<li >A</li>"+
+													"<li >B</li>"+
+													"<li >C</li>"+
+													"<li >D</li>"+
+												"</ul>";
+								num++;
+								question_num++;
+								oLi.append(oDiv);
+								//alert(obj[name].cases);
+								Qlist.append(oLi);
+							}else{
+								continue;
+							}
+
+							
+							//num++;
+							if(num==10){
+								break;//跳出循环，不影响程序的进行。
+							}
+						}
+						//console.log(arr_answer);测试答案数组是否保存成功
+						array_answer=arr_answer;//把拿到到的答案传到最外面的数据。
+					}
+				};
+
+			}
+		}
+		window.onload = function() {
+			showJson();
+		};
+		//判断的逻辑：获取到选项，然后找到对应得题目的盒子的id，之后到答案数组中进行查询和对比，然后进行判断，最后就能拿到结果，然后再用样式控制显示到答案本身就行了。
+		$(function () {
+			//由于ajax生成的元素是没有办法被jQuery获取的，所以这里先用一个已经存在的元素获取到，然后再向下找，就拿到了，但是遇到了事件冒泡，解决一下就行了（关键在于事件：e）
+            $('#questionsList').on('click','ul li',function(e){//这里括号里面的是用来定位标记元素里面的，不仅仅是一个，可以和css结构一样按照结构进行寻找。
+				var val=$(this).text();
+				var oId=$(this).parent().parent().attr("id");//利用父子关系获取到选项所对应的盒子的id。
+				if ( e && e.stopPropagation ){// 因此它支持W3C的stopPropagation()方法
+				e.stopPropagation();
+				}
+				else{//否则，我们需要使用IE的方式来取消事件冒泡
+				window.event.cancelBubble = true;
+				return false;
+				}
+				if(val==array_answer[oId]){
+					$(this).css("background-color","green");
+				}else{
+					$(this).css("background-color","red");
+				}
+			});
+
+        })
+	</script>
+</html>

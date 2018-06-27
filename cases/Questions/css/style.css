@@ -1,0 +1,22 @@
+.header{
+	height: 70px;
+	background-color: black;
+}
+.header .logo{
+	float: left;
+}
+.header .logo img{
+	height: 70px;
+	margin-left: 80px;
+}
+.header .title{
+	float: left;
+	padding: 0 25px;
+	height: 70px;
+	line-height: 70px;
+	background-color: #3f464d;
+	margin-left: 20px;
+}
+.header .title h3{
+	color: white;
+}

@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+.main{
+	width:960px;
+	margin: 0 auto;	
+}
+.main h1,h2{
+	text-align: center;
+}
+#questionsList>li{
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+.main .answerSelectionsList{
+	height: 50px;
+}
+.main .answerSelectionsList li{
+	float: left;
+	padding: 0 15px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.main .answerSelectionsList li:hover{
+	background-color: blue;
+	color: white;
+}
